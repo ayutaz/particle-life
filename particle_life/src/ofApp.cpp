@@ -205,7 +205,7 @@ void ofApp::saveSettings()
 	{
 		ofSystemAlertDialog("Could not Save Model!");
 	}
-	ofstream myfile(save_path);
+	std::ofstream myfile(save_path);
 	if (myfile.is_open())
 	{
 		for (int i = 0; i < settings.size(); i++)
@@ -511,7 +511,7 @@ void ofApp::draw()
 		}
 		else
 		{
-			ofClear(0);
+			ofClear(0, 255);
 		}
 
 		//Time step
