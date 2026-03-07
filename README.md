@@ -1,53 +1,53 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/hunar4321/life_code)
 ![GitHub](https://img.shields.io/github/license/hunar4321/life_code)
 
-# Particle Life Simulation
-A simple program to simulate primitive Artificial Life using simple rules of attraction or repulsion among atom-like particles, producing complex self-organzing life-like patterns. Excluding the GUI elements, the code is less than a page. The video tutorial and walkthrough are available below.
+# Particle Life シミュレーション
+原子のような粒子間の引力・斥力という単純なルールを用いて、原始的な人工生命をシミュレーションするシンプルなプログラムです。複雑で自己組織化する生命のようなパターンが生成されます。GUI要素を除けば、コードは1ページ未満です。動画チュートリアルとウォークスルーは以下からご覧いただけます。
 
-Learn More Here (YouTube video tutorial):
+詳しくはこちら（YouTube動画チュートリアル）:
 -----------------------------------------------
 https://youtu.be/0Kx4Y9TVMGg
 
-Online Demo (JavaScript version):
+オンラインデモ（JavaScript版）:
 -------------
-Click here for a live demo (JavaScript): 
-  - 2d - https://hunar4321.github.io/particle-life/particle_life.html
-  - 3d - https://hunar4321.github.io/particle-life/particle_life_3d.html
+ライブデモはこちら（JavaScript）:
+  - 2D - https://hunar4321.github.io/particle-life/particle_life.html
+  - 3D - https://hunar4321.github.io/particle-life/particle_life_3d.html
   
-Interface (C++ version)
+インターフェース（C++版）
 --------------------------------------------------------
 ![](images/interface.jpg)
 
-Example Results
+実行結果の例
 --------------------------------------------------------
 ![](images/big_pic.jpg)
 
-Some Interesting Patterns to Reproduce:
+再現できる興味深いパターン:
 -------------------------------------
-You do not need to be exact with the parameters to reproduce these patterns. The best way to get interesting patterns is to first try random parameter explorations, once you find an interesting pattern, try fine-tuning it gradually. To avoid becoming stuck at a local maximum, you can make some occasional big parameter jumps. In this way interesting and different patterns shall keep poping up.
+これらのパターンを再現するために、パラメータを正確に合わせる必要はありません。興味深いパターンを得る最良の方法は、まずランダムにパラメータを探索し、面白いパターンを見つけたら徐々に微調整することです。局所最適に陥らないようにするため、時折パラメータを大きく変化させてください。こうすることで、興味深く多様なパターンが次々と現れます。
 
 ![](images/some_patterns.jpg)
 
-To use:
+使い方:
 -------------
-Download this repo. unzip the file then go to /particle_life/bin/ folder and click on particle_life.exe
+このリポジトリをダウンロードし、ファイルを解凍してから /particle_life/bin/ フォルダに移動し、particle_life.exe をクリックしてください。
 
-Code:
+コード:
 ----------------
-The source code is available in C++, JavaScript, and Python.
-Watch this YouTube video for a walkthrough tutorial: https://youtu.be/0Kx4Y9TVMGg
+ソースコードはC++、JavaScript、Pythonで利用可能です。
+ウォークスルーチュートリアルはこちらのYouTube動画をご覧ください: https://youtu.be/0Kx4Y9TVMGg
 
-If you would like to contribute to the C++ program, the core algorithm is the first 100 lines of code at:  "/particle_life/src/ofApp.cpp". The rest are GUI components and rendering controls which are provided by the openFrameworks library an opensource and easy-to-use image rendering library.
+C++プログラムに貢献したい場合、コアアルゴリズムは "/particle_life/src/ofApp.cpp" の最初の100行にあります。残りはGUIコンポーネントとレンダリング制御で、オープンソースで使いやすい画像レンダリングライブラリであるopenFrameworksライブラリによって提供されています。
 
-To start, download this repository then download openFrameworks library from here: https://openframeworks.cc/. Use openFramework's projectGenerator and import /particle_life/ folder to the project.
+始めるには、このリポジトリをダウンロードしてから、こちらからopenFrameworksライブラリをダウンロードしてください: https://openframeworks.cc/。openFrameworkのprojectGeneratorを使用して、/particle_life/ フォルダをプロジェクトにインポートします。
 
-Alternatively, generate a new openFramework project and add ofxGui. Once the project files are generated replace the /src/ folder with the one provided here.
+あるいは、新しいopenFrameworkプロジェクトを生成してofxGuiを追加してください。プロジェクトファイルが生成されたら、/src/ フォルダをここで提供されているものに置き換えてください。
 
-You can now compile the C++ code on your machine.
+これでお使いのマシンでC++コードをコンパイルできます。
 
-The JavaScript code is as simple as this: 
+JavaScriptのコードはこれだけでシンプルです:
 -------------------------------------
-Also, look at the particle_life.html file for a more optimized version - thanks to those who have contributed. 
+より最適化されたバージョンについては particle_life.html ファイルもご覧ください。貢献してくださった皆さんに感謝します。
 
 ```html
 <canvas id="life" width="500" height="500"></canvas>
@@ -120,7 +120,7 @@ Also, look at the particle_life.html file for a more optimized version - thanks 
 ```
 </br>
 
-Other Ports:
+その他の移植版:
 -----------------------
 - [Godot](https://github.com/NiclasEriksen/game-of-leif)
 - [Rust](https://github.com/ChevyRay/smarticles)
@@ -136,26 +136,26 @@ Other Ports:
 - [Flutter](https://github.com/JillyTaboga/particles)
 
 
-Related topics:
+関連トピック:
 --------------------
-Particle Life Simulation,
-Primordial Soup - Evolution,
-Conway's game of life,
-Cellular automata,
-Self organzing patterns,
+Particle Lifeシミュレーション、
+原始スープ - 進化、
+コンウェイのライフゲーム、
+セルオートマトン、
+自己組織化パターン、
 
-This project was inspired by: Jeffery Ventrella's Clusters http://www.ventrella.com/Clusters/. I do not have access to Ventrella's code but I guess the main difference of this project from the other particle life projects is that I did not implement collision detection and this made simulating thousands of particles possible in real-time. Also, I added GUI controls to change the parameters in real-time allowing easy fine-tuning and exploration, hence, I was able to find some never-seen-before patterns emerge form some extremely simple models of relations. 
-The code here is probably an order of magnitude simpler than any other Artificial Life codes out there because I started this code solely as an educational material for non-programmers and general audience to prove the point that complexity can arise from simplicity.
+このプロジェクトは Jeffery Ventrella の Clusters に触発されました: http://www.ventrella.com/Clusters/。Ventrellaのコードにはアクセスできませんが、このプロジェクトと他のParticle Lifeプロジェクトとの主な違いは、衝突判定を実装しなかったことであり、これにより数千個の粒子をリアルタイムでシミュレーションすることが可能になりました。また、パラメータをリアルタイムで変更できるGUIコントロールを追加することで、簡単な微調整と探索が可能になり、非常にシンプルな関係モデルから、これまで見たことのないパターンが出現するのを発見することができました。
+ここのコードは、おそらく他のどの人工生命コードよりも桁違いにシンプルです。なぜなら、このコードは非プログラマーや一般の人々向けの教育資料として、「複雑さはシンプルさから生まれる」ことを証明するためだけに始めたものだからです。
 
 
-Todos:
+やることリスト:
 --------------------
-1. Adding the ability to save and load parameters (so that people can easily share the interesting models they find)
-2. Ability to add more particle types (currently it is fixed to four particle types)
-3. Currently, the biggest bottleneck is the nested for-loops (which calculate the pairwise distance among all particles) making the computational complexity quadratic. It would be amazing if we could find a way around.
-4. Alternative to point 3, computing the pairwise distances are embarrassingly parallel so it can be computed on GPU.
-5. Adding the ability to resize the screen and improving boundary-checking as many fast moving particles can escape the screen bounds.
-6. Adding a more intuitive UI so that it gives the ability for a finer control over the parameters.
-7. Adding a randomize button or, even better, having a simple meta rule to mutate the initial rule continously and recursively. This way the patterns will never get stuck on a local maximum and will keep changing!
-8. A better way to fine-tune is to use an evolutionary algorithm to select and optimize the parameters but one needs to write a fitness function for that. I currently don't know what fitness function corresponds to in the realm of this program. In our world the fitness function is competition and survival of the fittest. However, here we fine-tune and select the parameters that produce interesting patterns for us but the word "interesting" is easier to say than to define!
+1. パラメータの保存と読み込み機能の追加（見つけた興味深いモデルを簡単に共有できるようにするため）
+2. 粒子タイプを追加できる機能（現在は4種類の粒子タイプに固定されています）
+3. 現在、最大のボトルネックはネストされたforループ（全粒子間のペアワイズ距離を計算する）であり、計算量が二次関数的になっています。これを回避する方法が見つかれば素晴らしいです。
+4. 3の代替案として、ペアワイズ距離の計算は恥ずかしいほど並列化可能なので、GPUで計算できます。
+5. 画面のリサイズ機能の追加と境界チェックの改善（高速移動する粒子が画面外に飛び出す場合があるため）
+6. パラメータをより細かく制御できる、より直感的なUIの追加。
+7. ランダム化ボタンの追加、あるいはさらに良いのは、初期ルールを連続的かつ再帰的に変異させるシンプルなメタルールを持つことです。これにより、パターンが局所最適に陥ることなく、常に変化し続けます!
+8. より良い微調整方法は、進化アルゴリズムを使用してパラメータを選択・最適化することですが、そのためには適応度関数を書く必要があります。このプログラムの領域で適応度関数が何に相当するのか、現時点ではわかりません。私たちの世界では適応度関数は競争と適者生存です。しかし、ここでは私たちにとって興味深いパターンを生成するパラメータを微調整・選択しますが、「興味深い」という言葉は言うのは簡単でも定義するのは難しいのです!
 
