@@ -34,7 +34,7 @@ https://youtu.be/0Kx4Y9TVMGg
 
 コード:
 ----------------
-ソースコードはC++、JavaScript、Pythonで利用可能です。
+ソースコードはC++とJavaScriptで利用可能です。
 ウォークスルーチュートリアルはこちらのYouTube動画をご覧ください: https://youtu.be/0Kx4Y9TVMGg
 
 C++プログラムに貢献したい場合、コアアルゴリズムは "/particle_life/src/ofApp.cpp" の最初の100行にあります。残りはGUIコンポーネントとレンダリング制御で、オープンソースで使いやすい画像レンダリングライブラリであるopenFrameworksライブラリによって提供されています。
